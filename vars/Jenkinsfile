@@ -1,0 +1,12 @@
+pipline{
+  agent {lable 'dev-server'}
+
+  stages{
+    stage("Code clone"){
+      clone("https://github.com/vinayakz/two-tier-flask-app.git","master")
+    }
+    stage("Build"){
+      dockerbuild()
+    }
+  }
+}
