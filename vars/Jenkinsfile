@@ -1,3 +1,4 @@
+@Library('Shared')_
 pipline{
   agent {lable 'dev-server'}
 
