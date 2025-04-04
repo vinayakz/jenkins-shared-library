@@ -7,7 +7,7 @@ pipline{
       clone("https://github.com/vinayakz/two-tier-flask-app.git","master")
     }
     stage("Build"){
-      dockerbuild("https://github.com/vinayakz/two-tier-flask-app.git","master")
+      dockerbuild("notes-app","latest")
     }
   }
 }
