@@ -4,10 +4,19 @@ pipline{
 
   stages{
     stage("Code clone"){
-      clone("https://github.com/vinayakz/two-tier-flask-app.git","master")
+      stpes{
+        clone("https://github.com/vinayakz/two-tier-flask-app.git","master")
+      }
     }
     stage("Build"){
-      dockerbuild("notes-app","latest")
+      steps{
+        dockerbuild("notes-app","latest")
+      }
+    }
+    stage("Push to DocekrHub"){
+      steps{
+        dockerpush("dockerHubCreds","notes-app","latest")
+      }
     }
   }
 }
