@@ -2,11 +2,11 @@
 ### Step 1: Create a GitHub Repository for the Library
 - Create a GitHub repo, e.g., jenkins-shared-lib. jenkins-shared-lib/
 
-jenkins-shared-library/
-├── vars/
-    └── clone.groovy
-    └── dockerbuild.groovy
-    └── dockerpush.groovy
+- jenkins-shared-library/
+    - vars/
+        - clone.groovy
+        - dockerbuild.groovy
+        - dockerpush.groovy
 
 
 #### clone.groovy syntax
