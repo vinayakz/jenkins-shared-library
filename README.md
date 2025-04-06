@@ -48,7 +48,7 @@ def call(String Project, String ImageTag, String dockerhubuser){
 - follow below code for shared library
 
 ```bash
-@Library('Shared') _
+@Library('jenkins-shared-lib') _
 pipline{
   agent {lable 'dev-server'}
 
