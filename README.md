@@ -82,3 +82,5 @@ Example: Define a deployToProd() step once and use it in 10+ pipelines.
 
 2. Cleaner Jenkinsfiles
 Instead of putting hundreds of lines in the Jenkinsfile, you can abstract complexity into the shared library and keep your pipelines easy to read.
+
+Read More :- https://www.jenkins.io/doc/book/pipeline/shared-libraries/
